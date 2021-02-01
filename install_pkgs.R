@@ -21,4 +21,9 @@ BiocManager::install(c("GenomicRanges",
                        "BiocStyle"), ask = FALSE)
 
 # install latest version of CNVgears package 
-devtools::install_github("sinomem/cnvgears")
+# devtools::install_github("sinomem/cnvgears")
+BiocManager::install(version='devel')
+BiocManager::install("CNVgears")
+
+# install tinytex
+tinytex::install_tinytex()
